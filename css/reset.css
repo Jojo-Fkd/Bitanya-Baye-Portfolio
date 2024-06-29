@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  outline-color: none;
+}
+
+button {
+  border: none;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+img,
+button,
+li {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}

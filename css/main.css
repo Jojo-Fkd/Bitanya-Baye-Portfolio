@@ -1,0 +1,105 @@
+body {
+  background: var(--BGCOLOR);
+}
+
+/* HEADER STYLES */
+
+header nav {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+header nav ul {
+  border: 1.5px solid rgba(110, 48, 58, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.8rem;
+  width: 160px;
+  border-radius: 50px;
+  background: var(--BGCOLOR);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 500px) {
+  header nav {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  header nav ul {
+    padding: 0.5rem 1.3rem;
+    width: 140px;
+  }
+}
+
+/* FOOTER STYLES */
+
+footer {
+  padding: 0 2rem;
+  margin-top: 4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h4 {
+  padding: 1.4rem 2rem;
+  font-family: var(--TOPIC-FONT);
+  font-size: 2.5rem;
+  border-top: 2px solid var(--COLOR3);
+  border-bottom: 2px solid var(--COLOR3);
+  color: var(--COLOR3);
+}
+
+footer p {
+  font-family: var(--MAIN-FONT);
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 300;
+}
+
+footer section {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer section button {
+  border: 1.8px solid white;
+  border-radius: 5px;
+  height: 55px;
+  width: 180px;
+  font-family: var(--MAIN-FONT);
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  background: linear-gradient(to right, var(--COLOR2) 40%, var(--COLOR1));
+}
+
+footer section ul li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: var(--NAVIGATION-FONT);
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.year {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  align-self: stretch;
+  font-size: 1.4rem;
+}
