@@ -762,6 +762,8 @@ main {
 @media screen and (max-width: 460px) {
   .timeline-2 .summary {
     font-size: 2rem;
+    width: 100%;
+    border: 1px solid;
   }
 
   .timeline-2 .description section img {
@@ -1275,6 +1277,12 @@ article.skills {
   #showcase figure {
     gap: 1rem;
     flex-direction: column;
+    align-items: center;
+  }
+
+  #showcase figure figcaption {
+    text-align: center;
+    align-items: center;
   }
 }
 
