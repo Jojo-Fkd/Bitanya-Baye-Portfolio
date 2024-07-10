@@ -1,5 +1,39 @@
 body {
   background: var(--BGCOLOR);
+  overflow: hidden;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px) brightness(80%);
+  z-index: 1000;
+  display: grid;
+  place-content: center;
+}
+
+.loading span {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border: 5px solid var(--COLOR2);
+  border-radius: 50%;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  animation: span 0.8s linear infinite;
+}
+
+@keyframes span {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* HEADER STYLES */
